@@ -615,6 +615,7 @@ footer {
 
     .logo img {
         width: 110px;
+       display: block;
     }
 
     header ul {
