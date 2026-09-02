@@ -605,21 +605,23 @@ footer {
 
 @media (max-width: 600px) {
 
+    /* NAVBAR */
     header {
         height: auto;
-
-        padding: 18px 20px;
-
+        min-height: 80px;
+        padding: 15px 20px;
         flex-direction: column;
+        gap: 15px;
+    }
 
-        gap: 18px;
+    .logo img {
+        width: 120px;
     }
 
     header ul {
-        gap: 15px;
-
+        display: flex;
+        gap: 12px;
         flex-wrap: wrap;
-
         justify-content: center;
     }
 
@@ -627,45 +629,43 @@ footer {
         font-size: 12px;
     }
 
+
+    /* HERO */
     main {
-        padding: 50px 15px;
+        min-height: auto;
+        padding: 45px 15px 60px;
     }
 
     main > h2 {
         font-size: 30px;
+        line-height: 1.2;
+        margin-bottom: 30px;
     }
 
 
-    /* Hero images */
-
+    /* HIDE DECORATIVE IMAGES ON PHONE */
     .left-image,
     .right-image {
-        position: relative;
-
-        left: auto;
-        right: auto;
-        bottom: auto;
-
-        width: 40%;
-        max-height: 180px;
-
-        margin-top: 20px;
+        display: none;
     }
 
 
-    /* Search */
+    /* SEARCH BOX */
+    main > div {
+        width: 100%;
+    }
 
     main input {
+        width: 100%;
         padding: 17px;
-
         font-size: 15px;
     }
 
 
-    /* Cards */
-
+    /* CARDS */
     .cards-section {
         width: 92%;
+        margin: 50px auto;
     }
 
     .cards-section > h1 {
@@ -674,6 +674,7 @@ footer {
 
     .cards-container {
         grid-template-columns: 1fr;
+        gap: 20px;
     }
 
     .food-card > img {
