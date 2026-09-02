@@ -608,21 +608,22 @@ footer {
     /* NAVBAR */
     header {
         height: auto;
-        min-height: 80px;
-        padding: 15px 20px;
+        min-height: 150px;
+        padding: 15px 10px 20px;
         flex-direction: column;
-        gap: 15px;
+        gap: 20px;
     }
 
     .logo img {
-        width: 120px;
+        width: 110px;
     }
 
     header ul {
         display: flex;
-        gap: 12px;
+        gap: 10px;
         flex-wrap: wrap;
         justify-content: center;
+        width: 100%;
     }
 
     header ul li a {
