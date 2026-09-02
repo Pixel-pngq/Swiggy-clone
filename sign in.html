@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login page</title>
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    min-height: 100vh;
+}
+
+/* Login popup */
+.login-popup {
+    position: fixed;
+    top: 0;
+    right: -430px;
+
+    width: 400px;
+    height: 100vh;
+
+    background-color: white;
+
+    box-shadow: -5px 0 20px rgba(0, 0, 0, 0.15);
+
+    transition: right 0.4s ease;
+
+    z-index: 1000;
+}
+
+/* When popup is active */
+.login-popup.active {
+    right: 0;
+}
+
+/* Header */
+header {
+    padding: 35px 30px 25px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+header h1 {
+    display: inline;
+    font-size: 28px;
+    color: #333;
+}
+
+.or {
+    color: #777;
+    margin: 0 8px;
+}
+
+.account {
+    color: #ff5200;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.account a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* Main */
+main {
+    background-color: white;
+    padding: 30px;
+}
+
+/* Phone input */
+input[type="tel"] {
+    width: 100%;
+    padding: 15px;
+    font-size: 16px;
+
+    border: 1px solid #ccc;
+    border-radius: 5px;
+
+    outline: none;
+}
+
+input[type="tel"]:focus {
+    border-color: #ff5200;
+}
+
+/* Terms */
+main div div {
+    margin-top: 20px;
+}
+
+input[type="checkbox"] {
+    cursor: pointer;
+}
+
+label[for="terms"] {
+    font-size: 14px;
+    color: #555;
+    cursor: pointer;
+}
+
+/* Login button */
+button {
+    width: 100%;
+    padding: 15px;
+
+    border: none;
+    border-radius: 5px;
+
+    background-color: #ff5200;
+    color: white;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: #e64600;
+}
+
+/* Close button */
+.close-btn {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+
+    font-size: 28px;
+    color: #555;
+
+    cursor: pointer;
+
+    background: none;
+    border: none;
+    width: auto;
+    padding: 0;
+}
+
+.close-btn:hover {
+    color: #ff5200;
+}
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Login</h1>
+        <span class="or">or</span>
+        <span class="account"> <a href="/sign up.html">create an account</a></span>
+    </header>
+    <br>
+    <Main>
+        <div>
+            <label for="phone"></label>
+            <input type="tel" placeholder="Phone number">
+            <div>
+                <input type="checkbox" id="terms" name="terms">
+                <label for="terms"> I accept the Terms & Conditions & Privacy Policy</label>
+            </div>
+            <div>
+                <button>Login</button>
+            </div>
+        </div>
+    </Main>
+</body>
+
+</html>

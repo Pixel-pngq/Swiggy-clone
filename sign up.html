@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up- page</title>
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #ffffff;
+    color: #111;
+}
+
+/* Signup panel */
+header,
+main {
+    width: 470px;
+    margin-left: auto;
+    margin-right: 0;
+    padding-left: 45px;
+    padding-right: 45px;
+}
+
+/* Header */
+header {
+    padding-top: 70px;
+}
+
+header h1 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 14px;
+}
+
+header span {
+    font-size: 16px;
+}
+
+header a {
+    color: #ff5200;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+/* Small line below login text */
+header::after {
+    content: "";
+    display: block;
+    width: 35px;
+    height: 2px;
+    background: #111;
+    margin-top: 28px;
+}
+
+/* Main form */
+main {
+    margin-top: 50px;
+}
+
+/* Input boxes */
+input {
+    width: 100%;
+    height: 83px;
+    border: 1px solid #d6d6d6;
+    outline: none;
+    padding: 0 23px;
+    font-size: 18px;
+    color: #333;
+}
+
+input::placeholder {
+    color: #777;
+}
+
+/* Remove gaps between inputs */
+.name,
+.email {
+    margin-top: -1px;
+}
+
+/* Referral link */
+main a {
+    display: inline-block;
+    margin-top: 22px;
+    color: #ff5200;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+/* Continue button */
+button {
+    width: 100%;
+    height: 58px;
+    margin-top: 25px;
+    border: none;
+    background: #ff5200;
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #e94b00;
+}
+
+/* Terms and conditions */
+main p {
+    margin-top: 10px;
+    font-size: 13px;
+    line-height: 18px;
+    color: #333;
+}
+
+main p::first-line {
+    font-weight: 500;
+}
+    </style>
+</head>
+
+<body>
+    <header>
+        <div>
+            <h1>Sign up</h1>
+        </div>
+        <span>or</span><span><a href="/sign in.html"> login to your account</a></span>
+    </header>
+    <main>
+        <div class="phone number">
+            <label for="phone"></label>
+            <input type="tel" placeholder="Phone number" id="phone">
+            <div class="name">
+                <label for="name"></label>
+                <input type="text" placeholder="Name" id="name">
+            </div>
+            <div class="email">
+                <label for="email"></label>
+                <input type="email" placeholder="Email" id="email">
+            </div>
+            <div><a href="">Have a referral code ?</a></div>
+        </div>
+        <div><button>Continue</button></div>
+        <p>By creating an account, I accept the Terms & Conditions & Privacy Policy</p>
+    </main>
+</body>
+
+</html>
