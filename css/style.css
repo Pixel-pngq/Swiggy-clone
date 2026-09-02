@@ -608,6 +608,7 @@ footer {
     /* NAVBAR */
     header {
         height: auto;
+        min-height: 100px;
         padding: 15px 10px 20px;
         flex-direction: column;
         gap: 12px;
