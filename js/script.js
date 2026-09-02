@@ -28,7 +28,7 @@ if (header) {
 // 2. SEARCH INPUT
 // ================================
 
-const searchInput = document.querySelector("main input");
+const searchInput = document.querySelector(".search-input");
 
 if (searchInput) {
 
