@@ -676,6 +676,33 @@ main input:focus {
     display: none;
 }
 
+* =========================
+   CORPORATE PAGE - ABOUT
+========================= */
+
+.corporate-about {
+    width: 90%;
+    max-width: 800px;
+
+    margin: 0 auto 80px;
+
+    text-align: center;
+}
+
+.corporate-about > h1 {
+    font-size: 32px;
+    color: var(--dark);
+    margin-bottom: 25px;
+}
+
+.corporate-about p {
+    color: var(--gray);
+    font-size: 16px;
+    line-height: 1.7;
+
+    margin-bottom: 18px;
+}
+
 /* =========================
    FOOTER
 ========================= */
